@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>city-yuit</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="style/screen.css" rel="stylesheet" media="all">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+    <!-- modal-->
+              <div class="modal fade in" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close" data-dismiss="modal" aria-hidden="true"></span>
+                      <h5 class="modal-title h5" id="myModalLabel">мы перезвоним вам в течении 15 минут</h5>
+                      <b>и бесплатно подсчитаем стоимость вашего ремонта</b>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-wrapper">
+                          <form>
+
+                            <div class="form-group">
+                              <label>Ваше имя*</label>
+                              <input type="text" class="form-control"  required="">
+                            </div>
+
+                            <div class="form-group">
+                              <label>Ваше контактный телефон*</label>
+                              <input type="tel" class="form-control"  required="">
+                            </div>
+
+                            <button type="submit" class="btn-default">узнать стоимость ремонта</button>
+                           <p class="em">Ваши личные данные не будут переданы сторонним организациям</p>
+                          </form>
+                        </div>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+    <!-- end modal -->
+    <!-- modal-->
+              <div class="modal fade in" id="modal-projects" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close" data-dismiss="modal" aria-hidden="true"></span>
+                      <h5 class="modal-title h5" id="myModalLabel">о проекте</h5>
+                      
+                    </div>
+                    <div class="modal-body">
+                        <table>
+                          <tr>
+                            <td class="col-1">
+                            <p><b>ЗАДАЧА:</b><br>Выполнить капитальный ремонт в новостройке с перепланировкой</p>
+                            <p><b>АДРЕС:</b><br>г. Балашиха, ул.Твардовского, д. 22</p>
+                            <p><b>ПЛОЩАДЬ КВАРТИРЫ:</b><br>53м2 (двухкомнатная квартира).</p>
+                            <p><b>СРОК ИСПОЛНЕНИЯ:</b><br>2 месяца</p>
+                            </td>
+                            <td class="col-2">
+                              <p class="title">Выполненные работы</p>
+                              <p><b>УЗАКОНЕНА ПЕРЕПЛАНИРОВКА:</b><br>
+                              объединение и увеличение сантехнического узла за счёт коридора, проем в стене.</p>
+                              <p><b>стены:</b><br>
+                              возведена перегородка между кухней и ванной комнатой, прорублен проем в стене на кухню, штукатурка стен по маякам (1-1.5см), шпаклевка под обои, поклейка обоев.</p>
+                              <p><b>полы:</b><br>
+                              выполнена стяжка пола (5см), в ванной комнате сделана гидроизоляция, на кухне и в ванной комнате уложена плитка в жилых комнатах уложен ламинат 33 класса.</p>
+                              <p><b>потолок:</b><br>
+                              в гостинной смонтирован двухуровневый потолок из ГКЛ, в ванной комнате реечный потолок, на кухне и в спальне натяжной потолок пвх.</p>
+                              <p><b>сантехника:</b><br>
+                              монтаж водоснабжения выполнен металопластиковыми трубами (полная замена сантехники).</p>
+                              <p><b>электрика:</b><br>
+                              проведена полностью новая проводка с монтажом электрощита.</p>
+                            </td>
+                          </tr>
+                        </table> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+    <!-- end modal -->
+
+      <div class="top parallax-window" data-parallax="scroll" data-image-src="i/top.jpg" data-speed="0">
+
+        <div class="container">
+          <div class="row">
+
+              <div class="wrap-logo"><a href="#"><img src="i/logo.png" alt="" width="181" height="63"></a>
+                  <span class="tel">+7 (499) 372-03-00</span>
+              </div>
+            <div class="col-lg-8">
+              <h1 class="h1">
+                подарите себе уютный ремонт<br>
+                <span>всего за 45 дней от лучших специалистов</span><br>
+                с гарантией до 36 месяцев
+              </h1>
+              <ul>
+                <li class="first">старт работ <br>в течении<br> 48 часов</li>
+                <li class="second">приступаем <br>без предоплаты</li>
+                <li class="third">доставка <br>материала</li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="form-wrapper pull-right">
+                <p class="title-form">Закажите выезд специалиста сейчас и вы получите:</p>
+                <ol>
+                  <li class="one"><i>Консультацию специалиста</i></li>
+                  <li class="two"><i>Просчет сметы на работы</i></li>
+                  <li class="three"><i>Просчет сметы на черновой материал</i></li>
+                </ol>
+                <p class="free-time">бесплатно<br> в течении 24 часов</p>
+                <form >
+                    <input type="text" class="form-control"  placeholder="Ваше имя*">
+                    <input type="tel" class="form-control"  placeholder="Ваш контактный телефон*">
+                    <input type="text" class="form-control"  placeholder="Примечание">
+                  <button type="submit" class="btn-default">пригласить специалиста</button>
+                  <p class="em">Ваши личные данные не будут переданы сторонним организациям</p>
+                </form>
+              </div>
+            </div>
+
+          
+          </div><!-- end row -->
+        </div> <!-- end container -->
+        <div class="econom">
+          <h2 class="h2">как сэкономить на ремонте<br> более 40 000 рублей?</h2>
+        </div>
+      </div>
+      <div class="houses  parallax-window" data-parallax="scroll" data-image-src="i/room.jpg" data-speed="0">
+        <div class="container">
+          <div class="row">
+            <h3 class="h3">создайте идеальные условия для жизни и работы</h3>
+            <p class="info-text">Мы осуществляем ремонтно-строительные работы в помещениях<br>
+                любого типа, площади и технические состояния
+            </p>
+            <ul class="list-houses">
+              <li><img src="i/house-1.png" alt="">
+                комнаты<span>От 1,5 недель</span>
+              </li>
+              <li><img src="i/house-2.png" alt="">
+                квартиры<span>От 3 недель</span>
+              </li>
+              <li><img src="i/house-3.png" alt="">
+                коттеджи<span>От 2 месяцев</span>
+              </li>
+              <li><img src="i/house-4.png" alt="">
+                офисы<span>От 1 месяца</span>
+              </li>
+              <li class="last"><img src="i/house-5.png" alt="">
+                производство<span>После расчета сметы</span>
+              </li>
+            </ul>
+
+            <button class="btn-orange" data-toggle="modal" data-target="#modal-form">узнать полную стоимость <br>и сроки ремонта по телефону</button>
+          </div>
+
+        </div>  
+      </div>
+      <nav data-spy="affix" data-offset-top="450">
+        <ul>
+          <li class="active"><a href="" class="link">главная</a></li>
+          <li><a href="" class="link">объекты</a></li>
+          <li><a href="" class="link">ремонт</a></li>
+          <li><a href="" class="link">все услуги</a></li>
+          <li><a href="" class="link">примеры работ</a></li>
+          <li><a href="" class="link">faq</a></li>
+          <li><a href="" class="link">контакты</a></li>
+        </ul>
+      </nav>
+      <div class="advantage parallax-window" data-parallax="scroll" data-image-src="i/city.jpg" data-speed="0">
+      
+        <div class="container">
+          <div class="row">
+            <h3 class="h3">почему нам доверяют</h3>
+            <table class="table-advantage">
+              <tr>
+              <td>7+
+                  <span>более 7 лет на рынке ремонтных и отделочных услуг</span>
+              </td>
+              <td>3
+                  <span>года гарантии</span>
+              </td>
+              <td>5+
+                  <span>лет минимальный профессиональный стаж наших мастеров</span>
+              </td>
+              </tr>
+              <tr>
+              <td>20+
+                  <span>каждый год более чем на 20 объекта исправляем ошибки частных мастеров</span>
+              </td>
+              <td>30%
+                  <span>наших клиентов приходят к нам по рекомендациям друзей</span>
+              </td>
+              <td>15%
+                  <span>скидки на последующие ремонты для вас и ваших друзей</span>
+              </td>
+              <tr>
+            </table>
+          </div>
+          
+        </div>
+        
+      </div>
+      <div class="business">
+        <h3 class="h3">решения для жизни и бизнеса</h3>
+        <ul class="list-business">
+          <li>
+            <h4 class="h4">косметический ремонт</h4>
+            <p class="price">от 1 600 рублей за м <sup>2</sup></p>
+            <img src="i/business-1.jpg" alt="">
+            <p>Идеальное решение для<br>
+            <b>Предпродажной подготовки <br>Сдачи квартиры в аренду <br>Обновления ремонта<br>Офисных помещений</b></p>
+            <button class="btn-orange">рассчитать точную стоимость</button>
+          </li>
+          <li class="repair-2">
+            <h4 class="h4">капитальный ремонт</h4>
+            <p class="price">от 5 000 рублей за м <sup>2</sup></p>
+            <img src="i/business-2.jpg" alt="">
+            <p>Идеальное решение для<br>
+            <b>Обновления квартиры <br>Ремонта новостроек <br>Коттеджей</b></p>
+            <button class="btn-orange">рассчитать точную стоимость</button>
+            <img src="i/econom-sales.png" alt="" class="discount">
+          </li>
+          <li class="last">
+            <h4 class="h4">эксклюзивный ремонт</h4>
+            <p class="price">от 10 500 рублей за м <sup>2</sup></p>
+            <img src="i/business-3.jpg" alt="">
+            <p>Идеальное решение для<br>
+            <b>Роскошной жизни <br></b></p>
+            <button class="btn-orange ">рассчитать точную стоимость</button>
+          </li>
+        </ul>
+        <div class="type-work-wrap">
+          <h5 class="h5">виды работ</h5>
+          <ul class="type-work">
+            <li><i>Демонтажные работы</i></li>
+            <li><i>Грунтование стен и потолка</i></li>
+            <li><i>Шпатлевка стен и потолка</i></li>
+            <li><i>Установка сантехники</i></li>
+            <li><i>Замена розеток</i></li>
+            <li><i>Покраска потолка</i></li>
+            <li><i>Поклейка обоев</i></li>
+            <li><i>Укладка ламината</i></li>
+          </ul>
+          <p><img src="i/free.png" alt="" width="228" height="43"></p>
+        </div>  
+        <div class="type-work-wrap type-work-wrap-2">
+          <h5 class="h5">виды работ</h5>
+        <ul class="type-work">
+          <li><i>Демонтажные работы</i></li>
+          <li><i>Выравнивание стен и потолка</i></li>
+          <li><i>Шпатлевка стен и потолка</i></li>
+          <li><i>Выравнивание пола</i></li>
+          <li><i>Полная замена электропроводки</i></li>
+          <li><i>Замена труб водоснабжения и канализации</i></li>
+          <li><i>Укладка плитки</i></li>
+          <li><i>Покраска потолка</i></li>
+          <li><i>Поклейка обоев</i></li>
+          <li><i>Монтаж напольного покрытия</i></li>
+        </ul>
+        </div>
+        <div class="type-work-wrap">
+          <h5 class="h5">виды работ</h5>
+        <ul class="type-work">
+          <li><i>Эксклюзивный дизайн-проект</i></li>
+          <li><i>Демонтажные работы</i></li>
+          <li><i>Возведение стен</i></li>
+          <li><i>Выравнивание и подготовка стен</i></li>
+          <li><i>Монтаж фигурного потолка</i></li>
+          <li><i>Выравнивание пола</i></li>
+          <li><i>Полная замена электропроводки</i></li>
+          <li><i>Монтаж труб водоснабжения и канализации</i></li>
+          <li><i>Укладка плитки, мозайки</i></li>
+          <li><i>Установка сантехники</i></li>
+          <li><i>Покраска стен и потолка</i></li>
+          <li><i>Установка дверей</i></li>
+          <li><i>Укладка штучного паркета, массива</i></li>
+          <li><i>Уборка и вывоз мусора</i></li>
+        </ul>
+        </div>
+      </div>
+      <div class="order-call">
+        <div class="container">
+          <div class="row">
+            <h3 class="h3"><span class="active span-1"><b class="tab-to-2">дизайн-проект в подарок</b></span>
+                          <span><b class="tab-to-1">скидка 10% и клининг в подарок</b></span></h3>
+            <div class="tab-content">
+              <div class="tab-1 ">
+                <h4 class="h4">Закажите капитальный ремонт площадью от 40 м <sup>2</sup> и получите В ПОДАРОК СКИДУ 10%!</h4>      
+                <div class="col-lg-8">
+                  <h4 class="h4 h4-title">Вы сэкономите:</h4>
+                  <ul>
+                    <li>
+                      <img src="i/tools.png" alt="" width="109" height="109">
+                      Более 20 000 рублей <br>на ремонте помещения
+                    </li>
+                    <li class="middle">
+                      <img src="i/paper.png" alt="" width="109" height="109">
+                      Более 15 000 рублей <br>на стройматериалах
+                    </li>
+                    <li>
+                      <img src="i/plumber.png" alt="" width="109" height="109">
+                      Более 5 000 рублей на клининге
+                    </li>
+                  </ul>
+                  <p class="pig-block">ваша выгода на ремонте <br>- более 40 000 рублей!</p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-wrapper">
+                    <h5 class="h5">мы перезвоним вам <br>в течении 15 минут</h5>
+                    <form >
+                      <label>Ваше имя*
+                        <input type="text" class="form-control" >
+                      </label>  
+                       <label>Ваш контактный телефон*
+                        <input type="tel" class="form-control" >
+                      </label>
+                      <button type="submit" class="btn-default">заказать бесплатный номер</button>
+                      <p class="em">Ваши личные данные не будут переданы сторонним организациям</p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-2 active">
+                                 
+                <div class="col-lg-8">
+                  <h4 class="h4 h4-title">ЗАКАЖИТЕ <br>РЕМОНТ от <b>40</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; м<sup>2</sup></h4>
+                  <p>и получите дизайн-проект помещения в подарок!</p>
+                  <p class="pig-block">сэкономьте более <br>52 000 рублей на ремонте!</p>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-wrapper">
+                    <h5 class="h5">мы перезвоним вам <br>в течении 15 минут</h5>
+                    <form >
+                      <label>Ваше имя*
+                        <input type="text" class="form-control" >
+                      </label>  
+                       <label>Ваш контактный телефон*
+                        <input type="tel" class="form-control" >
+                      </label>
+                      <button type="submit" class="btn-default">заказать бесплатный номер</button>
+                      <p class="em">Ваши личные данные не будут переданы сторонним организациям</p>
+                    </form>
+                  </div>
+                </div>
+              </div>  
+            </div>  
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="type-repair">
+        <div class="container">
+          <div class="row">
+            <h3 class="h3">комплексный и частичный ремонт</h3>
+            <ul class="list-type-repair">
+              <li class="odd">
+                <div class="repair-wrap">
+                  <h4 class="h4">дизайн помещений</h4>
+                  <p>Разработка дизайн-проекта помещения. Вы получите готовую инструкцию для ремонта с описанием всех материалов отделки, цветовыми решениями, расположением 
+                      мебели и других предметов интерьера, схемами освещения, электроснабжения, шумоизоляции и вентиляции.  
+                  </p>
+                  <a href="#" class="btn-red">заказать дизайн-проект</a>
+                </div>
+                <div class="img-wrap"><img src="i/type-repair.jpg" alt=""></div>
+              </li>
+              <li class="even">
+                <div class="img-wrap"><img src="i/type-repair-2.jpg" alt=""></div>
+                <div class="repair-wrap">
+                  <h4 class="h4">капитальный ремонт</h4>
+                  <p>Мы сами демонтируем старые покрытия и коммуникации, проведем новые, выполним весь ремонт и предоставим вам полностью готовое к комфортной жизни и плодотворной работе помещения  
+                  </p>
+                  <a href="#" class="btn-red">заказать капитальный ремонт</a>
+                </div>
+                
+              </li>
+            </ul>
+            <h3 class="h3">от замены розеток до установки кондиционеров</h3>
+            <ul class="list-type-repair">
+              <li class="odd">
+                <div class="repair-wrap">
+                  <h4 class="h4">мелкий ремонт</h4>
+                  <p>Для тех, кому не требуется капитальный ремонт. Все виды работ по дому: замена электрики и сантехники, монтаж полов и потолков, шпатлевка стен и поклейка обоев.</p>
+ 
+                   <p> А также другие виды частичного ремонта помещений. 
+                  </p>
+                  <a href="#" class="btn-red">заказать ремонт</a>
+                </div>
+                <div class="img-wrap"><img src="i/type-repair-3.jpg" alt=""></div>
+              </li>
+              <li class="even">
+                <div class="img-wrap"><img src="i/type-repair-4.jpg" alt=""></div>
+                <div class="repair-wrap">
+                  <h4 class="h4">монтаж окон пвх</h4>
+                  <p>Помимо надежности и практичности, окна от Сити Уют могут похвастать еще одним важным преимуществом - возможностью разработки уникальных форм и размеров конкретно для вашей квартиры или офиса. 
+                  </p>
+                  <a href="#" class="btn-red">рассчитать стоимость</a>
+                </div> 
+              </li >
+              <li class="odd">
+                <div class="repair-wrap">
+                  <h4 class="h4">установка потолков</h4>
+                  <p>Все виды потолков: грильятто, армстронг, гипсокартонные, смешанные, натяжные, натяжные, зеркальные, реечные, ПВХ и кассетные.  
+                  </p>
+                  <p>Наши специалисты помогут вам определиться с выбором идеального потолка для вашего помещения.
+                  </p>
+                  <a href="#" class="btn-red">рассчитать стоимость</a>
+                </div>
+                <div class="img-wrap"><img src="i/type-repair-5.jpg" alt=""></div>
+              </li>
+              <li class="even">
+                <div class="img-wrap"><img src="i/type-repair-6.jpg" alt=""></div>
+                <div class="repair-wrap">
+                  <h4 class="h4">установка кондиционеров</h4>
+                  <p>Установка включает в себя не только монтаж устройств, но и проектирование вентиляции. 
+                  </p>
+                  <p>Мы установим кондиционеры так, чтобы прохладный воздух равномерно распределялся по всей площади помещения.
+                  </p>
+                  <a href="#" class="btn-red">рассчитать стоимость</a>
+                </div> 
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+      <div class="reviews">
+        <div class="container">
+          <div class="row">
+            <h3 class="h3">Уют и комфорт. Дома и на работе</h3>
+            <div class="review-item">
+              <h5 class="h5">капитальный ремонт трехкомнатной квартиры</h5>
+              <div class="wrapper-slider">
+                <i class="before"></i>
+                <i class="after"></i>
+                <div class="slider">
+                  <div class="slide"><img src="i/before.jpg"></div>
+                  <div class="slide"><img src="i/after.jpg"></div>
+                  <div class="slide"><img src="i/before.jpg"></div>
+                  <div class="slide"><img src="i/after.jpg"></div>
+                </div>
+              </div>  
+              <div class="review-text">
+                <h4 class="h4">отзыв заказчика</h4>
+                <div>
+                  <i>Хорошо, что есть высоко профессиональные и порядочные специалиста в своем деле. Если возникнет необходимость в проведении подобных работ, конечно обращусь в первую 
+                  очередь.<br>Спасибо</i>
+                </div>
+                <b class="author-review">Сергей Сергеев</b>
+              </div>
+              <div class="about-project">
+                <h4 class="h4">о проекте</h4>
+                <p><b>задача:</b> выполнить капитальный ремонт в новостройке с перепланировкой.</p>
+
+                <p><b>адрес:</b> г. Балашиха, ул.Твардовского, д.22<br>
+                <b>площадь квариры:</b> 53 м2<br>
+                <b>срок исполнения:</b> 2 месяца</p>
+                <a href="#" class="link-brown"  data-toggle="modal" data-target="#modal-projects">подробнее о проекте</a>
+              </div>
+               <a href="#" class="btn-red">заказать такой же ремонт</a>
+            </div>
+           
+            <a href="#" class="more-project">посмотреть больше<br> выполненных ремонтов</a>
+          </div>
+        </div>
+      </div>
+      <div class="question">
+        <h3 class="h3">часто задаваемые вопросы</h3>
+        <div class="question-inner">
+          <div class="question-item">
+            <h4 class="h4">почему лучше обращаться за услугами ремонта к ремонтно-строительной компании, а не к частному мастеру?</h4>
+            <i>Строительно-ремонтная организация несет за свою работу юридическую ответственность — с каждым клиентом заключается договор, в котором чётко прописываются условия работы, гарантии и обязательства со стороны организации.</i>
+          </div>
+
+          <a href="#" class="more-question">еще 5 ответов на важные<br>вопросы о ремонте</a>
+        </div>
+      </div>
+
+      <div class="contacts">
+        <h3 class="h3">Контакты</h3>
+        <div class="contacts-info">
+          <h5 class="h5">мы работаем с 8:00 до 20:00</h5>
+          <span>
+            без праздников и выходных
+          </span>
+          <p class="address">
+            Москва, пр. Добролюбова дом 2 стр. 4 оф. 29<br><br>
+            
+              <span>Телефон:</span><br>
+              +7 (499) 372-03-00<br><br>
+            <span>Email: <a href="mailto:city-yuit@yandex.ru">city-yuit@yandex.ru</a></span>
+          </p>
+        </div>
+        <div id="map"></div>
+      </div>
+
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <h3 class="h3">остались вопросы?</h3>
+            <a href="#" class="link-ask">задайте их нашим<br>специалистам!</a>
+            <ul>
+              <li>
+                <a href=""><img src="i/logo-footer.png" alt="" width="135" height="47" class="logo-bottom"></a>
+              </li>
+              <li>
+                ООО «Сити Уют»<br>
+                Строительные и отделочные работы<br>
+                +7 (499) 372-03-00<br>
+              </li>
+              <li class="creater">
+                <a href="#" target="_blank">
+                Создание сайта<br>
+                <img src="i/uplab.png" alt="" width="75" height="24">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+   
+    </div><!-- end wrapper -->
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/affix.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/slider.js"></script>
+  </body>
+</html>
